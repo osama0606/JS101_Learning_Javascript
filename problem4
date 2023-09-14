@@ -1,0 +1,19 @@
+
+let name = "Name        -     Osama"
+let school = "School      -     Anglo High School"
+let grade = "Grade       -     1st"
+let section = "Section     -     A"
+let rollno = "Roll No     -     7"
+let education = "Education   -     BE"
+console.log("⁂⁂⁂⁂⁂⁂⁂⁂⁂⁂ Results ⁂⁂⁂⁂⁂⁂⁂⁂⁂⁂")
+console.log(name);
+console.log(school);
+console.log(grade);
+console.log(section);
+console.log(rollno);
+console.log(education);
+
+
+console.log("⁂⁂⁂⁂⁂⁂⁂⁂⁂⁂ Marks Obtained ⁂⁂⁂⁂⁂⁂⁂⁂⁂⁂⁂")
+console.log("Science     Math     English");
+console.log("   95        90         93")
