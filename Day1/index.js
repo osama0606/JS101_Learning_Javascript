@@ -1,40 +1,17 @@
 
-const movies = ['3idiots','PK','Talash','Dhoom3','Dangle'];
 
-console.log(movies);
-
-movies.push('Dhoom2');
-
-console.log(movies);
-
-movies.shift();
-
-console.log(movies);
-
-movies.forEach((ele)=> console.log(ele));
-
-console.log(movies.includes('Dangle'))
-
- 
- 
- 
- 
-//  const str = 'OSAMA KHAN';
-
-// console.log(str);
+// function print(arr){
+//     for(let key of arr){
+//         console.log(key)
+//     }
+// }
+// print([1,2,3])
 
 
+function print(arr){
+    for(let i=0; i<arr.length; i++){
+        console.log(`Index:${i} and Value:${arr[i]}`)
+    }
+}
+print([5,3,2,6,1])
 
-// // console.log(str.toUpperCase());
-
-// console.log(str.includes('osama'));
-
-// console.log(str.toLowerCase());
-
-// console.log(str.split(' '));
-
-// console.log(str.slice(0,5));
-
-// console.log(str.charAt(6));
-
-// console.log(str.indexOf('K'))
