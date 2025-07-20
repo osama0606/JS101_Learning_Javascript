@@ -1,18 +1,16 @@
-// Create a function linearSearch(arr, target)
 
-// If target number exists in the array, print: "Found"
 
-// If not, print: "Not Found"
-
-// 🔸 Example:
-// linearSearch([1, 2, 3, 4, 5], 3);  // ➝ Output: Found
-// linearSearch([10, 20, 30], 50);   // ➝ Output: Not Found
-
-function linearSearch(arr,target){
-    for(let i=0; i < arr.length; i++){
-        if(arr[i] === target) return "Found"
+function sum(arr){
+    let total = 0;
+    let n = arr.length;
+    
+    for(let i = 0; i < n; i++){
+        total += arr[i];
     }
-    return "Not Found"
+    console.log(`The total Sum is : ${total}`);
+    let average = total/n; 
+    console.log(`Average : ${average}`)
+    
 }
-console.log(linearSearch([1, 2, 3, 4, 5], 3))
-console.log(linearSearch([10, 20, 30], 50)) 
+
+sum([1,2,3,4,5,6,7,8,9,10])
