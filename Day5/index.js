@@ -1,35 +1,20 @@
-// function bubbleSort(arr) {
-//   let n = arr.length;
-
-//   for (let i = 0; i < n - 1; i++) {
-//     for (let j = 0; j < n - 1 - i; j++) {
-//       if (arr[j] > arr[j + 1]) {
-//         // Swap
-//         [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
-//       }
-//     }
-//   }
-
-//   return arr;
-// }
-
-// console.log(bubbleSort([4,2,1]))
+// second larges number
 
 
-
-
-function bubbleSort(arr){
-    let n = arr.length;
+function secondLargest(arr){
+    let first = -Infinity;
+    let second = -Infinity;
     
-    for(let i=0; i<n-1; i++){
-        for(let j=0; j<n-1-i; j++){
-            if(arr[j] > arr[j+1]){
-              // swaping
-              [arr[j], arr[j+1]] = [arr[j+1], arr[j]]
-            }
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] > first){
+            second = first;
+            first = arr[i];
+        }else if(arr[i] > second && arr[i] !== first){
+            second = arr[i];
+            
         }
     }
-    return arr;
+    console.log(`second largest : ${second}`)
 }
 
-console.log(bubbleSort([9,6,8,9,264,99,267,9]))
+secondLargest([12, 7, 25, 3, 18])
