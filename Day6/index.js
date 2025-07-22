@@ -1,48 +1,17 @@
-
-// 🧠 Basic Concept:
-// Array must be sorted
-
-// Start with two pointers: low (start of array) and high (end of array)
-
-// Find mid index:
-// mid = Math.floor((low + high) / 2)
-
-// Compare arr[mid] with target
-
-// If equal → return mid (target found)
-
-// If target < arr[mid] → search in left half
-
-// If target > arr[mid] → search in right half
-
-// Repeat steps until found or range is over
+// find max and min number
 
 
-
-function binarySearch(arr,target){
-    let low = 0;
-    let high = arr.length-1;
+function FindMaxMin(arr){
+    let max = arr[0];
+    let min = arr[0];
     
-    while(low <= high){
-        let mid = Math.floor((low+high)/2);
-        if(arr[mid] == target){
-            return mid
-        }else if(target < arr[mid]){
-            high = mid - 1;
-        }else{
-           low = mid + 1; 
-        }
+    for(let i = 1; i < arr.length; i++){
+        if(arr[i] > max){
+            max = arr[i];
+        }else if(arr[i] < min){
+            min = arr[i];
+        } 
     }
-    return -1;
+    console.log(`Max : ${max} and Min : ${min}`);
 }
-
-console.log(binarySearch([10,20,30,40,50],10))
-console.log(binarySearch([10,20,30,40,50,60],20))
-console.log(binarySearch([10,20,30,40,50,60,70],30))
-console.log(binarySearch([10,20,30,40,50,60,70,80],40))
-console.log(binarySearch([10,20,30,40,50,60,70,80,90],50))
-
-
-
-
-
+FindMaxMin([6,8,9,3,4,5,6,7,8,9,10])
