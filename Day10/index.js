@@ -1,20 +1,16 @@
-// insertionSort Algoritham
- 
-function insertionSort(arr){
-    for(let i=1; i<arr.length; i++){
-        let current = arr[i];
-        let j = i -1; 
-        while(j>=0 && arr[j] > current){
-            arr[j+1] = arr[j];
-            j--;
-        }
-        arr[j+1] = current;
+function isPalindrome(str){
+    let reversed = '';
+    
+    for(let i = str.length - 1; i >= 0; i--){
+        reversed += str[i];
     }
-    return arr;
+    if(str === reversed){
+        console.log(`${str} is a palindrome`);
+    }else{
+        console.log(`${str} is not a palindrome`);
+    }
 }
- 
- console.log(insertionSort([6,63,59,9,8,3,7,1]))
- 
- 
+isPalindrome('osama');
+isPalindrome('madam');
  
  
