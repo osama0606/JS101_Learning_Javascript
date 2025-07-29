@@ -6,7 +6,7 @@ function countCharFrequency(str){
         if(freq[char]){
             freq[char]++;
         }else{
-            freq[char] = 1;
+            freq[char] = 1; // like obj['firstName'] = 'Osama Khan'
         }
     }
     return freq;
