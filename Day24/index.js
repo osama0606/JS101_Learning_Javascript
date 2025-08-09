@@ -1,4 +1,4 @@
-function pyramid(n){
+function diamondPattern(n){
     for(let i=1; i<=n; i++){
         let row='';
         for(let j=1; j<=n-i; j++){
@@ -20,7 +20,7 @@ function pyramid(n){
         console.log(row)
     }
 }
-pyramid(5)
+diamondPattern(5)
 
 
 
